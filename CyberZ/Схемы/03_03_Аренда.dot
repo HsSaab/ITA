@@ -1,0 +1,16 @@
+digraph G {
+graph [charset="UTF-8", rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.5", ranksep="0.65", splines=polyline];
+node [shape=plain, fontname="DejaVu Sans", fontsize=15];
+edge [fontname="DejaVu Sans", fontsize=12, color="#526579", arrowsize=0.7];
+guest [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Гость<BR/>guest</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+session [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Игровая сессия<BR/>session</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">guest_id [FK]</TD></TR><TR><TD ALIGN="LEFT">pc_id [FK]</TD></TR><TR><TD ALIGN="LEFT">tariff_id [FK]</TD></TR><TR><TD ALIGN="LEFT">booking_id [FK]</TD></TR></TABLE>>];
+software [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Программное обеспечение<BR/>software</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+game [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Игра<BR/>game</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">software_id [FK]</TD></TR></TABLE>>];
+game_account [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Игровой аккаунт<BR/>game_account</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">game_id [FK]</TD></TR></TABLE>>];
+rental [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Аренда аккаунта<BR/>rental</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">session_id [FK]</TD></TR><TR><TD ALIGN="LEFT">account_id [FK]</TD></TR></TABLE>>];
+guest -> session [label="1 : 0..N\nguest_id", style=solid];
+software -> game [label="0..1 : 0..N\nsoftware_id", style=solid];
+game -> game_account [label="1 : 0..N\ngame_id", style=solid];
+session -> rental [label="1 : 0..N\nsession_id", style=solid];
+game_account -> rental [label="1 : 0..N\naccount_id", style=solid];
+}

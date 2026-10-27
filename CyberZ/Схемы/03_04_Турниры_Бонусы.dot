@@ -1,0 +1,26 @@
+digraph G {
+graph [charset="UTF-8", rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.5", ranksep="0.65", splines=polyline];
+node [shape=plain, fontname="DejaVu Sans", fontsize=15];
+edge [fontname="DejaVu Sans", fontsize=12, color="#526579", arrowsize=0.7];
+employee [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Сотрудник<BR/>employee</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">manager_id [FK]</TD></TR></TABLE>>];
+guest [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Гость<BR/>guest</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+session [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Игровая сессия<BR/>session</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">guest_id [FK]</TD></TR><TR><TD ALIGN="LEFT">pc_id [FK]</TD></TR><TR><TD ALIGN="LEFT">tariff_id [FK]</TD></TR><TR><TD ALIGN="LEFT">booking_id [FK]</TD></TR></TABLE>>];
+tariff [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Тариф<BR/>tariff</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+tournament [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Турнир<BR/>tournament</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">tariff_id [FK]</TD></TR><TR><TD ALIGN="LEFT">support_id [FK]</TD></TR></TABLE>>];
+participation [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Участие в турнире<BR/>participation</B></TD></TR><TR><TD ALIGN="LEFT">tournament_id [PK, FK]</TD></TR><TR><TD ALIGN="LEFT">guest_id [PK, FK]</TD></TR><TR><TD ALIGN="LEFT">session_id [FK]</TD></TR></TABLE>>];
+payment [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Платёж<BR/>payment</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">guest_id [FK]</TD></TR><TR><TD ALIGN="LEFT">accepted_by [FK]</TD></TR></TABLE>>];
+loyalty_rule [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Правило лояльности<BR/>loyalty_rule</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+bonus_accrual [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Начисление бонусов<BR/>bonus_accrual</B></TD></TR><TR><TD ALIGN="LEFT">payment_id [PK, FK]</TD></TR><TR><TD ALIGN="LEFT">rule_id [FK]</TD></TR></TABLE>>];
+employee -> employee [label="0..1 : 0..N\nmanager_id", style=solid];
+guest -> payment [label="1 : 0..N\nguest_id", style=solid];
+employee -> payment [label="1 : 0..N\naccepted_by", style=solid];
+guest -> session [label="1 : 0..N\nguest_id", style=solid];
+tariff -> session [label="1 : 0..N\ntariff_id", style=solid];
+tariff -> tournament [label="1 : 0..N\ntariff_id", style=solid];
+employee -> tournament [label="1 : 0..N\nsupport_id", style=solid];
+tournament -> participation [label="1 : 0..N\ntournament_id", style=solid];
+guest -> participation [label="1 : 0..N\nguest_id", style=solid];
+session -> participation [label="1 : 0..1\nsession_id", style=solid];
+payment -> bonus_accrual [label="1 : 0..1\npayment_id", style=solid];
+loyalty_rule -> bonus_accrual [label="1 : 0..N\nrule_id", style=solid];
+}

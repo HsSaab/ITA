@@ -1,0 +1,10 @@
+digraph G {
+graph [charset="UTF-8", rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.5", ranksep="0.65", splines=polyline];
+node [shape=plain, fontname="DejaVu Sans", fontsize=15];
+edge [fontname="DejaVu Sans", fontsize=12, color="#526579", arrowsize=0.7];
+n0 [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>LanGame</B></TD></TR><TR><TD ALIGN="LEFT">После завершения сессии перезапустить ПК</TD></TR></TABLE>>];
+n1 [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Администратор</B></TD></TR><TR><TD ALIGN="LEFT">Очистить стол и периферию, расставить оборудование</TD></TR></TABLE>>];
+n2 [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Администратор</B></TD></TR><TR><TD ALIGN="LEFT">Проверить место и закрыть тикет уборки</TD></TR></TABLE>>];
+n0 -> n1 [label="", style=solid];
+n1 -> n2 [label="", style=solid];
+}

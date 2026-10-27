@@ -1,0 +1,1047 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="ПР2 · Организационная структура" id="02_01_Оргструктура">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="director" value="&lt;b&gt;Директор&lt;/b&gt;&lt;hr&gt;Стратегия и утверждение расходов" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="621.5300000000001" y="0.0" width="427.78000000000003" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="manager" value="&lt;b&gt;Управляющий&lt;/b&gt;&lt;hr&gt;Организация работы клуба&lt;br&gt;Тарифы и качество обслуживания" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="632.6400000000001" y="184.71500000000003" width="405.56" height="148.60999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Приём гостей и оплата&lt;br&gt;Бронирование, подготовка и обновление ПК" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="208.33000000000004" y="418.055" width="518.0600000000001" height="148.60999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="tech" value="&lt;b&gt;Техническая поддержка&lt;/b&gt;&lt;hr&gt;Диагностика программных сбоев&lt;br&gt;Проведение турниров" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1008.2849999999999" y="418.055" width="395.83" height="148.60999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="guest" value="&lt;b&gt;Гость&lt;br&gt;внешний участник&lt;/b&gt;&lt;hr&gt;Выбор тарифа и действий в сессии" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="500.695" y="651.382" width="416.66999999999996" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="lg" value="&lt;b&gt;LanGame&lt;br&gt;информационная система&lt;/b&gt;&lt;hr&gt;Учёт и автоматизированные проверки" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-0.004999999999988347" y="651.382" width="451.39" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="подчинение" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="director" target="manager" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="835.4200000000001" y="122.44999999999999" />
+              <mxPoint x="835.4200000000001" y="149.32999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="подчинение" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="manager" target="admin" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="678.85" y="358.49" />
+              <mxPoint x="633.77" y="386.72999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="координация" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;dashed=1;" edge="1" source="manager" target="tech" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="993.16" y="358.49" />
+              <mxPoint x="1038.6" y="386.72999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="обращения и диагностика" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;dashed=1;" edge="1" source="admin" target="tech" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="815.5300000000001" y="492.36" />
+              <mxPoint x="913.5500000000001" y="492.36" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="работа в системе" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;dashed=1;" edge="1" source="admin" target="lg" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="356.75" y="592.28" />
+              <mxPoint x="325.53000000000003" y="620.09" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="обслуживание" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;dashed=1;" edge="1" source="guest" target="admin" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="617.35" y="627.35" />
+              <mxPoint x="585.97" y="599.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · Зоны ответственности" id="02_02_Зоны_ответственности">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m" value="&lt;b&gt;Управляющий&lt;/b&gt;&lt;hr&gt;Контроль всех процессов и правил обслуживания" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="406.94" y="0.0" width="580.5600000000001" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="a" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;БП1 · Бронирование&lt;br&gt;БП2 · Регистрация и пополнение&lt;br&gt;БП5 · Приём технической проблемы&lt;br&gt;БП6 · Подготовка места&lt;br&gt;БП7 · Обновление игр&lt;br&gt;БП10 · Контроль бонусов" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="218.04999999999998" width="425.0" height="343.06" as="geometry" />
+        </mxCell>
+        <mxCell id="t" value="&lt;b&gt;Техническая поддержка&lt;/b&gt;&lt;hr&gt;БП5 · Диагностика и устранение сбоя&lt;br&gt;БП8 · Проведение турнира" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="475.69" y="315.27500000000003" width="443.06" height="148.60999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="l" value="&lt;b&gt;LanGame&lt;br&gt;автоматизация&lt;/b&gt;&lt;hr&gt;БП1–2 · Учёт брони и оплаты&lt;br&gt;БП3 · Запуск сессии&lt;br&gt;БП4 · Продление и завершение&lt;br&gt;БП6–7 · Режим работы ПК&lt;br&gt;БП8 · Учёт турнирного пакета&lt;br&gt;БП9 · Вход в арендованный аккаунт&lt;br&gt;БП10 · Расчёт и начисление бонусов" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1683.3100000000002" y="184.72" width="427.78000000000003" height="409.71999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="g" value="&lt;b&gt;Гость&lt;br&gt;самостоятельные действия&lt;/b&gt;&lt;hr&gt;БП1–2, 5 · Заявка, данные, оплата, обращение&lt;br&gt;БП3–4 · Выбор тарифа и действия&lt;br&gt;БП8 · Покупка пакета и подключение&lt;br&gt;БП9 · Выбор игры для аренды" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="968.75" y="257.635" width="537.5" height="263.89" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="работа персонала" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="m" target="a" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="557.96" y="117.64000000000001" />
+              <mxPoint x="525.0" y="133.32999999999996" />
+              <mxPoint x="525.0" y="133.32999999999996" />
+              <mxPoint x="525.0" y="133.32999999999996" />
+              <mxPoint x="450.0" y="184.72" />
+              <mxPoint x="450.0" y="184.72" />
+              <mxPoint x="450.0" y="184.72" />
+              <mxPoint x="437.88" y="195.1" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="техническое обеспечение" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="m" target="t" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="697.22" y="153.54000000000002" />
+              <mxPoint x="697.22" y="240.57999999999998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="правила автоматизации" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;dashed=1;" edge="1" source="m" target="l" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1228.8999999999999" y="136.31000000000003" />
+              <mxPoint x="1531.9" y="184.72" />
+              <mxPoint x="1531.9" y="184.72" />
+              <mxPoint x="1531.9" y="184.72" />
+              <mxPoint x="1598.1999999999998" y="221.63999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="запросы гостя" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;dashed=1;" edge="1" source="g" target="l" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1561.7" y="389.58" />
+              <mxPoint x="1619.3999999999999" y="389.58" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП1" id="02_03_БП1">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Гость&lt;/b&gt;&lt;hr&gt;Передать дату, время и номер ПК" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="17.36" y="0.0" width="402.78000000000003" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Проверить и согласовать место" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="29.164999999999996" y="165.27000000000004" width="379.17" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Сохранить параметры бронирования" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="330.55" width="437.5" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Передать подтверждение гостю" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="23.61" y="495.83000000000004" width="390.28000000000003" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="218.75" y="117.49000000000001" />
+              <mxPoint x="218.75" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="218.75" y="282.77000000000004" />
+              <mxPoint x="218.75" y="302.49000000000007" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n2" target="n3" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="218.75" y="448.05" />
+              <mxPoint x="218.75" y="467.77000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП2" id="02_04_БП2">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Проверить данные и открыть учётную запись" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="0.0" width="537.5" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Ввести сумму и принять оплату" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="78.47" y="165.27000000000004" width="380.56" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Зафиксировать платёж и обновить баланс" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="18.75" y="330.55" width="500.0" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Выдать гостю чек" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="154.85999999999999" y="495.83000000000004" width="227.78" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="268.75" y="117.49000000000001" />
+              <mxPoint x="268.75" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="268.75" y="282.77000000000004" />
+              <mxPoint x="268.75" y="302.49000000000007" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n2" target="n3" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="268.75" y="448.05" />
+              <mxPoint x="268.75" y="467.77000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП3" id="02_05_БП3">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Гость&lt;/b&gt;&lt;hr&gt;Выбрать ПК и тариф" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="88.19" y="0.0" width="255.56" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Проверить баланс и доступность ПК" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="165.28" width="431.94" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Запустить сессию или выдать отказ" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1.385000000000014" y="330.56" width="429.16999999999996" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="215.97" y="117.50000000000003" />
+              <mxPoint x="215.97" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="215.97" y="282.78" />
+              <mxPoint x="215.97" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП4" id="02_06_БП4">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Гость&lt;/b&gt;&lt;hr&gt;Выбрать продление или завершение" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="82.63499999999996" y="0.0" width="436.11" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Для продления проверить баланс и будущую бронь" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-0.004999999999988347" y="165.28" width="601.39" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Продлить / завершить / отказать в продлении" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="29.85500000000001" y="330.56" width="541.67" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300.69" y="117.50000000000003" />
+              <mxPoint x="300.69" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300.69" y="282.78" />
+              <mxPoint x="300.69" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП5" id="02_07_БП5">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Принять обращение и выполнить первичную проверку" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.004999999999988347" y="0.0" width="636.11" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;Техническая поддержка&lt;/b&gt;&lt;hr&gt;Подключиться при программном сбое" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="93.755" y="165.28" width="448.61" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;Администратор и техподдержка&lt;/b&gt;&lt;hr&gt;Проверить результат и закрыть обращение" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="61.11500000000003" y="330.56" width="513.89" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="318.06" y="117.50000000000003" />
+              <mxPoint x="318.06" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="318.06" y="282.78" />
+              <mxPoint x="318.06" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП6" id="02_08_БП6">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;После завершения сессии перезапустить ПК" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="61.11499999999999" y="0.0" width="520.83" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Очистить стол и периферию, расставить оборудование" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="165.28" width="643.0600000000001" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Проверить место и закрыть тикет уборки" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="77.08500000000002" y="330.56" width="488.89" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="321.53000000000003" y="117.50000000000003" />
+              <mxPoint x="321.53000000000003" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="321.53000000000003" y="282.78" />
+              <mxPoint x="321.53000000000003" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП7" id="02_09_БП7">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Администратор через LanGame&lt;/b&gt;&lt;hr&gt;Перевести ПК в технический режим" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="46.53" y="0.0" width="427.78000000000003" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Проверить и установить обновления" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="43.06000000000001" y="165.28" width="434.71999999999997" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;Администратор через LanGame&lt;/b&gt;&lt;hr&gt;Проверить запуск и вернуть рабочий режим" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.004999999999988347" y="330.56" width="520.83" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260.42" y="117.50000000000003" />
+              <mxPoint x="260.42" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260.42" y="282.78" />
+              <mxPoint x="260.42" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП8" id="02_10_БП8">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Гость&lt;/b&gt;&lt;hr&gt;Купить турнирный пакет на 5 часов" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="61.80500000000002" y="0.0" width="426.39" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;Гость&lt;/b&gt;&lt;hr&gt;Самостоятельно подключиться с ПК клуба" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="25.0" y="165.28" width="500.0" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;Техническая поддержка&lt;/b&gt;&lt;hr&gt;Провести турнир и зафиксировать результаты" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="330.56" width="550.0" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275.0" y="117.50000000000003" />
+              <mxPoint x="275.0" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275.0" y="282.78" />
+              <mxPoint x="275.0" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП9" id="02_11_БП9">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;Гость&lt;/b&gt;&lt;hr&gt;Войти в личный кабинет" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="104.86" y="0.0" width="300.0" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;Гость&lt;/b&gt;&lt;hr&gt;Открыть сервис аренды и выбрать игру" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="18.75" y="165.28" width="472.21999999999997" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Выполнить автоматический вход в аккаунт" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="330.56" width="509.71999999999997" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="254.85999999999999" y="117.50000000000003" />
+              <mxPoint x="254.85999999999999" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="254.85999999999999" y="282.78" />
+              <mxPoint x="254.85999999999999" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР2 · БП10" id="02_12_БП10">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Определить счёт и подтверждённую оплату" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.004999999999988347" y="0.0" width="523.61" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="&lt;b&gt;LanGame&lt;/b&gt;&lt;hr&gt;Рассчитать бонусы и обновить баланс" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="37.50499999999999" y="165.28" width="448.61" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;Проверить сведения об операции" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="61.81000000000001" y="330.56" width="400.0" height="100.0" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n0" target="n1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="261.81" y="117.50000000000003" />
+              <mxPoint x="261.81" y="137.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="n1" target="n2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="261.81" y="282.78" />
+              <mxPoint x="261.81" y="302.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР3 · Обслуживание гостя" id="03_01_Обслуживание">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="guest" value="&lt;b&gt;Гость&lt;br&gt;guest&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="277.779" y="0.06999999999992568" width="97.222" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="wallet" value="&lt;b&gt;Баланс гостя&lt;br&gt;wallet&lt;/b&gt;&lt;hr&gt;guest_id [PK, FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="95.13499999999999" y="293.79" width="204.17000000000002" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" value="&lt;b&gt;Платёж&lt;br&gt;payment&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;accepted_by [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="349.30999999999995" y="245.18" width="209.72" height="215.28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking" value="&lt;b&gt;Бронирование&lt;br&gt;booking&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;pc_id [FK]&lt;br&gt;created_by [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="609.72" y="220.87500000000003" width="202.78" height="263.89" as="geometry" />
+        </mxCell>
+        <mxCell id="session" value="&lt;b&gt;Игровая сессия&lt;br&gt;session&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;pc_id [FK]&lt;br&gt;tariff_id [FK]&lt;br&gt;booking_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="779.1650000000001" y="587.54" width="213.89000000000001" height="312.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pc" value="&lt;b&gt;Игровой ПК&lt;br&gt;pc&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="753.475" y="0.06999999999992568" width="170.82999999999998" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="tariff" value="&lt;b&gt;Тариф&lt;br&gt;tariff&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1031.23" y="293.79" width="106.94" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="session_event" value="&lt;b&gt;Событие сессии&lt;br&gt;session_event&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;session_id [FK]&lt;br&gt;tariff_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="877.78" y="1002.82" width="222.22" height="215.28" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="1 : 0..1&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="wallet" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="279.45000000000005" y="166.1999999999999" />
+              <mxPoint x="249.22" y="234.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="1 : 0..N&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="payment" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="366.54" y="151.89999999999984" />
+              <mxPoint x="385.65" y="195.3999999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="1 : 0..N&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="booking" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450.53999999999996" y="137.59999999999994" />
+              <mxPoint x="584.72" y="220.87999999999982" />
+              <mxPoint x="584.72" y="220.87999999999982" />
+              <mxPoint x="584.72" y="220.87999999999982" />
+              <mxPoint x="591.77" y="228.1599999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="1 : 0..N&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="186.47" y="129.2" />
+              <mxPoint x="0.0" y="220.87999999999982" />
+              <mxPoint x="0.0" y="220.87999999999982" />
+              <mxPoint x="0.0" y="220.87999999999982" />
+              <mxPoint x="0.0" y="484.76999999999987" />
+              <mxPoint x="0.0" y="484.76999999999987" />
+              <mxPoint x="0.0" y="484.76999999999987" />
+              <mxPoint x="528.65" y="638.4699999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="0..1 : 0..1&lt;br&gt;booking_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="booking" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="773.15" y="522.77" />
+              <mxPoint x="784.72" y="554.2099999999999" />
+              <mxPoint x="784.72" y="554.2099999999999" />
+              <mxPoint x="784.72" y="554.2099999999999" />
+              <mxPoint x="789.89" y="563.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="1 : 0..N&lt;br&gt;session_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="session" target="session_event" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="938.7600000000001" y="931.5899999999999" />
+              <mxPoint x="947.8199999999999" y="963.67" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="1 : 0..N&lt;br&gt;pc_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="pc" target="booking" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="801.72" y="145.09999999999988" />
+              <mxPoint x="787.16" y="178.29999999999995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="1 : 0..N&lt;br&gt;pc_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="pc" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="864.4" y="136.3999999999999" />
+              <mxPoint x="869.4399999999999" y="151.39999999999992" />
+              <mxPoint x="869.4399999999999" y="151.39999999999992" />
+              <mxPoint x="869.4399999999999" y="151.39999999999992" />
+              <mxPoint x="880.5600000000001" y="518.0999999999999" />
+              <mxPoint x="880.5600000000001" y="518.0999999999999" />
+              <mxPoint x="880.5600000000001" y="518.0999999999999" />
+              <mxPoint x="881.1899999999999" y="543.6399999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="1 : 0..N&lt;br&gt;tariff_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="tariff" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1024.2" y="459.17999999999995" />
+              <mxPoint x="990.28" y="518.0999999999999" />
+              <mxPoint x="990.28" y="518.0999999999999" />
+              <mxPoint x="990.28" y="518.0999999999999" />
+              <mxPoint x="978.21" y="544.0799999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="0..1 : 0..N&lt;br&gt;tariff_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="tariff" target="session_event" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070.4" y="565.2599999999999" />
+              <mxPoint x="1043.1" y="969.4899999999999" />
+              <mxPoint x="1043.1" y="969.4899999999999" />
+              <mxPoint x="1043.1" y="969.4899999999999" />
+              <mxPoint x="1039.3000000000002" y="979.0699999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР3 · Персонал и техническое обслуживание" id="03_02_Техника">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="employee" value="&lt;b&gt;Сотрудник&lt;br&gt;employee&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;manager_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="0.0" y="-0.03499999999998504" width="200.0" height="166.67000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="pc" value="&lt;b&gt;Игровой ПК&lt;br&gt;pc&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="800.6949999999999" y="24.270000000000014" width="170.82999999999998" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="session" value="&lt;b&gt;Игровая сессия&lt;br&gt;session&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;pc_id [FK]&lt;br&gt;tariff_id [FK]&lt;br&gt;booking_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="605.5550000000001" y="636.1199999999999" width="213.89000000000001" height="312.5" as="geometry" />
+        </mxCell>
+        <mxCell id="booking" value="&lt;b&gt;Бронирование&lt;br&gt;booking&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;pc_id [FK]&lt;br&gt;created_by [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="611.11" y="269.4549999999999" width="202.78" height="263.89" as="geometry" />
+        </mxCell>
+        <mxCell id="service_ticket" value="&lt;b&gt;Заявка обслуживания&lt;br&gt;service_ticket&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;pc_id [FK]&lt;br&gt;session_id [FK]&lt;br&gt;created_by [FK]&lt;br&gt;assigned_to [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="189.585" y="1051.3999999999999" width="295.83" height="312.5" as="geometry" />
+        </mxCell>
+        <mxCell id="software" value="&lt;b&gt;Программное обеспечение&lt;br&gt;software&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="375.7" y="24.270000000000014" width="356.94" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_software" value="&lt;b&gt;ПО на ПК&lt;br&gt;pc_software&lt;/b&gt;&lt;hr&gt;pc_id [PK, FK]&lt;br&gt;software_id [PK, FK]&lt;br&gt;updated_by [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="304.86" y="293.75999999999993" width="234.72" height="215.28" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="0..1 : 0..N&lt;br&gt;manager_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="employee" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="228.39000000000001" y="59.60000000000001" />
+              <mxPoint x="250.0" y="67.7999999999999" />
+              <mxPoint x="250.0" y="83.30000000000001" />
+              <mxPoint x="250.0" y="96.89999999999995" />
+              <mxPoint x="233.46" y="104.89999999999995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="1 : 0..N&lt;br&gt;created_by" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="booking" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="269.8" y="140.39999999999998" />
+              <mxPoint x="350.0" y="166.7" />
+              <mxPoint x="350.0" y="166.7" />
+              <mxPoint x="350.0" y="166.7" />
+              <mxPoint x="518.0600000000001" y="200.0" />
+              <mxPoint x="518.0600000000001" y="200.0" />
+              <mxPoint x="518.0600000000001" y="200.0" />
+              <mxPoint x="559.16" y="242.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="1 : 0..N&lt;br&gt;created_by" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="service_ticket" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="67.673" y="304.6999999999999" />
+              <mxPoint x="29.166999999999998" y="566.68" />
+              <mxPoint x="29.166999999999998" y="566.68" />
+              <mxPoint x="29.166999999999998" y="566.68" />
+              <mxPoint x="29.166999999999998" y="602.7899999999998" />
+              <mxPoint x="29.166999999999998" y="602.7899999999998" />
+              <mxPoint x="29.166999999999998" y="602.7899999999998" />
+              <mxPoint x="145.82999999999998" y="1018.0699999999999" />
+              <mxPoint x="145.82999999999998" y="1018.0699999999999" />
+              <mxPoint x="145.82999999999998" y="1018.0699999999999" />
+              <mxPoint x="160.57" y="1032.5299999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="0..1 : 0..N&lt;br&gt;assigned_to" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="service_ticket" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="156.25" y="350.4" />
+              <mxPoint x="250.95000000000002" y="797.5299999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="1 : 0..N&lt;br&gt;updated_by" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="pc_software" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="221.19" y="203.29999999999995" />
+              <mxPoint x="265.83" y="246.9999999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="1 : 0..N&lt;br&gt;pc_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="pc" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890.3000000000001" y="171.59999999999994" />
+              <mxPoint x="891.6700000000001" y="200.0" />
+              <mxPoint x="891.6700000000001" y="200.0" />
+              <mxPoint x="891.6700000000001" y="200.0" />
+              <mxPoint x="891.6700000000001" y="236.09999999999988" />
+              <mxPoint x="891.6700000000001" y="236.09999999999988" />
+              <mxPoint x="891.6700000000001" y="236.09999999999988" />
+              <mxPoint x="838.89" y="533.3399999999999" />
+              <mxPoint x="838.89" y="533.3399999999999" />
+              <mxPoint x="838.89" y="533.3399999999999" />
+              <mxPoint x="813.89" y="602.7899999999998" />
+              <mxPoint x="813.89" y="602.7899999999998" />
+              <mxPoint x="813.89" y="602.7899999999998" />
+              <mxPoint x="808.7199999999999" y="612.3799999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="1 : 0..N&lt;br&gt;pc_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="pc" target="booking" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="835.99" y="175.7999999999999" />
+              <mxPoint x="812.19" y="218.99999999999994" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="1 : 0..N&lt;br&gt;pc_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="pc" target="service_ticket" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="919.6199999999999" y="171.59999999999994" />
+              <mxPoint x="930.5600000000001" y="200.0" />
+              <mxPoint x="930.5600000000001" y="200.0" />
+              <mxPoint x="930.5600000000001" y="200.0" />
+              <mxPoint x="956.9399999999999" y="269.49999999999983" />
+              <mxPoint x="956.9399999999999" y="269.49999999999983" />
+              <mxPoint x="956.9399999999999" y="269.49999999999983" />
+              <mxPoint x="956.9399999999999" y="533.3399999999999" />
+              <mxPoint x="956.9399999999999" y="533.3399999999999" />
+              <mxPoint x="956.9399999999999" y="533.3399999999999" />
+              <mxPoint x="844.4399999999999" y="948.62" />
+              <mxPoint x="844.4399999999999" y="948.62" />
+              <mxPoint x="844.4399999999999" y="948.62" />
+              <mxPoint x="643.22" y="1050.8899999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="1 : 0..N&lt;br&gt;pc_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="pc" target="pc_software" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="741.43" y="185.19999999999985" />
+              <mxPoint x="668.0600000000001" y="236.09999999999988" />
+              <mxPoint x="668.0600000000001" y="236.09999999999988" />
+              <mxPoint x="668.0600000000001" y="236.09999999999988" />
+              <mxPoint x="586.11" y="269.49999999999983" />
+              <mxPoint x="586.11" y="269.49999999999983" />
+              <mxPoint x="586.11" y="269.49999999999983" />
+              <mxPoint x="569.76" y="282.49999999999994" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="0..1 : 0..N&lt;br&gt;session_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="session" target="service_ticket" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="568.1899999999999" y="952.4999999999999" />
+              <mxPoint x="525.5799999999999" y="999.3699999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="0..1 : 0..1&lt;br&gt;booking_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="booking" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="712.5" y="563.27" />
+              <mxPoint x="712.5" y="595.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" value="1 : 0..N&lt;br&gt;software_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="software" target="pc_software" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450.77" y="171.39999999999986" />
+              <mxPoint x="416.66999999999996" y="200.0" />
+              <mxPoint x="416.66999999999996" y="200.0" />
+              <mxPoint x="416.66999999999996" y="200.0" />
+              <mxPoint x="416.66999999999996" y="236.09999999999988" />
+              <mxPoint x="416.66999999999996" y="236.09999999999988" />
+              <mxPoint x="416.66999999999996" y="236.09999999999988" />
+              <mxPoint x="417.37" y="256.79999999999995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР3 · Аренда игровых аккаунтов" id="03_03_Аренда">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="guest" value="&lt;b&gt;Гость&lt;br&gt;guest&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="58.328999999999986" y="245.09999999999997" width="97.222" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="session" value="&lt;b&gt;Игровая сессия&lt;br&gt;session&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;pc_id [FK]&lt;br&gt;tariff_id [FK]&lt;br&gt;booking_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-0.0050000000000105516" y="490.24" width="213.89000000000001" height="312.5" as="geometry" />
+        </mxCell>
+        <mxCell id="software" value="&lt;b&gt;Программное обеспечение&lt;br&gt;software&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="202.09" y="-0.0300000000000189" width="356.94" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="game" value="&lt;b&gt;Игра&lt;br&gt;game&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;software_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="282.64500000000004" y="220.79499999999993" width="195.82999999999998" height="166.67000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="game_account" value="&lt;b&gt;Игровой аккаунт&lt;br&gt;game_account&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;game_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="263.89500000000004" y="563.155" width="233.32999999999998" height="166.67000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="rental" value="&lt;b&gt;Аренда аккаунта&lt;br&gt;rental&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;session_id [FK]&lt;br&gt;account_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="125.00500000000001" y="905.5200000000001" width="236.10999999999999" height="215.28" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="1 : 0..N&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="106.94" y="395.96" />
+              <mxPoint x="106.94" y="438.20000000000005" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="1 : 0..N&lt;br&gt;session_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="session" target="rental" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="176.67" y="834.29" />
+              <mxPoint x="188.67000000000002" y="866.37" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="0..1 : 0..N&lt;br&gt;software_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="software" target="game" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380.56" y="145.97999999999996" />
+              <mxPoint x="380.56" y="179.57" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="1 : 0..N&lt;br&gt;game_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="game" target="game_account" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380.56" y="437.6" />
+              <mxPoint x="380.56" y="501.35" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="1 : 0..N&lt;br&gt;account_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="game_account" target="rental" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="331.03" y="778.95" />
+              <mxPoint x="307.26" y="841.85" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ПР3 · Турниры и бонусная программа" id="03_04_Турниры_Бонусы">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1169" pageHeight="1654">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="employee" value="&lt;b&gt;Сотрудник&lt;br&gt;employee&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;manager_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="190.28" y="-0.0050000000000549605" width="200.0" height="166.67000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="guest" value="&lt;b&gt;Гость&lt;br&gt;guest&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="608.329" y="24.299999999999944" width="97.222" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="session" value="&lt;b&gt;Игровая сессия&lt;br&gt;session&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;pc_id [FK]&lt;br&gt;tariff_id [FK]&lt;br&gt;booking_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="284.72499999999997" y="269.44" width="213.89000000000001" height="312.5" as="geometry" />
+        </mxCell>
+        <mxCell id="tariff" value="&lt;b&gt;Тариф&lt;br&gt;tariff&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="14.58600000000001" y="24.299999999999944" width="106.94" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="tournament" value="&lt;b&gt;Турнир&lt;br&gt;tournament&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;tariff_id [FK]&lt;br&gt;support_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="46.53" y="318.05" width="187.5" height="215.28" as="geometry" />
+        </mxCell>
+        <mxCell id="participation" value="&lt;b&gt;Участие в турнире&lt;br&gt;participation&lt;/b&gt;&lt;hr&gt;tournament_id [PK, FK]&lt;br&gt;guest_id [PK, FK]&lt;br&gt;session_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="256.95" y="684.72" width="269.44" height="215.28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" value="&lt;b&gt;Платёж&lt;br&gt;payment&lt;/b&gt;&lt;hr&gt;id [PK]&lt;br&gt;guest_id [FK]&lt;br&gt;accepted_by [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="777.0799999999999" y="318.05" width="209.72" height="215.28" as="geometry" />
+        </mxCell>
+        <mxCell id="loyalty_rule" value="&lt;b&gt;Правило лояльности&lt;br&gt;loyalty_rule&lt;/b&gt;&lt;hr&gt;id [PK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1036.8300000000002" y="366.65999999999997" width="281.94" height="118.06" as="geometry" />
+        </mxCell>
+        <mxCell id="bonus_accrual" value="&lt;b&gt;Начисление бонусов&lt;br&gt;bonus_accrual&lt;/b&gt;&lt;hr&gt;payment_id [PK, FK]&lt;br&gt;rule_id [FK]" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fillColor=#E7EFF7;strokeColor=#526579;fontFamily=Arial;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="959.72" y="709.025" width="280.56" height="166.67000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="0..1 : 0..N&lt;br&gt;manager_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="employee" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="418.67" y="59.54999999999995" />
+              <mxPoint x="440.28000000000003" y="67.83999999999999" />
+              <mxPoint x="440.28000000000003" y="83.32999999999996" />
+              <mxPoint x="440.28000000000003" y="96.88999999999996" />
+              <mxPoint x="423.73" y="104.92999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="1 : 0..N&lt;br&gt;support_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="tournament" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235.19" y="209.42999999999995" />
+              <mxPoint x="211.96" y="262.03000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="1 : 0..N&lt;br&gt;accepted_by" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="employee" target="payment" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="486.8" y="175.49" />
+              <mxPoint x="618.0600000000001" y="236.11000000000004" />
+              <mxPoint x="618.0600000000001" y="236.11000000000004" />
+              <mxPoint x="618.0600000000001" y="236.11000000000004" />
+              <mxPoint x="738.89" y="269.44" />
+              <mxPoint x="738.89" y="269.44" />
+              <mxPoint x="738.89" y="269.44" />
+              <mxPoint x="755.24" y="287.14000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="1 : 0..N&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="576.1700000000001" y="141.45000000000005" />
+              <mxPoint x="540.28" y="166.66999999999996" />
+              <mxPoint x="540.28" y="166.66999999999996" />
+              <mxPoint x="540.28" y="166.66999999999996" />
+              <mxPoint x="386.11" y="200.0" />
+              <mxPoint x="386.11" y="200.0" />
+              <mxPoint x="386.11" y="200.0" />
+              <mxPoint x="386.11" y="236.11000000000004" />
+              <mxPoint x="386.11" y="236.11000000000004" />
+              <mxPoint x="386.11" y="236.11000000000004" />
+              <mxPoint x="386.38" y="245.18000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="1 : 0..N&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="participation" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="635.75" y="185.17000000000002" />
+              <mxPoint x="625.0" y="236.11000000000004" />
+              <mxPoint x="625.0" y="236.11000000000004" />
+              <mxPoint x="625.0" y="236.11000000000004" />
+              <mxPoint x="523.61" y="581.9399999999999" />
+              <mxPoint x="523.61" y="581.9399999999999" />
+              <mxPoint x="523.61" y="581.9399999999999" />
+              <mxPoint x="488.89" y="651.39" />
+              <mxPoint x="488.89" y="651.39" />
+              <mxPoint x="488.89" y="651.39" />
+              <mxPoint x="481.83" y="661.52" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="1 : 0..N&lt;br&gt;guest_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="guest" target="payment" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="725.63" y="188.38999999999996" />
+              <mxPoint x="768.78" y="253.51" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="1 : 0..1&lt;br&gt;session_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="session" target="participation" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="391.67" y="613.35" />
+              <mxPoint x="391.67" y="645.29" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="1 : 0..N&lt;br&gt;tariff_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="tariff" target="session" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="121.50000000000001" y="185.17000000000002" />
+              <mxPoint x="148.60999999999999" y="236.11000000000004" />
+              <mxPoint x="148.60999999999999" y="236.11000000000004" />
+              <mxPoint x="148.60999999999999" y="236.11000000000004" />
+              <mxPoint x="258.33" y="269.44" />
+              <mxPoint x="258.33" y="269.44" />
+              <mxPoint x="258.33" y="269.44" />
+              <mxPoint x="266.2" y="278.58" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="1 : 0..N&lt;br&gt;tariff_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="tariff" target="tournament" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="16.749" y="171.63000000000005" />
+              <mxPoint x="0.0" y="200.0" />
+              <mxPoint x="0.0" y="200.0" />
+              <mxPoint x="0.0" y="200.0" />
+              <mxPoint x="0.0" y="236.11000000000004" />
+              <mxPoint x="0.0" y="236.11000000000004" />
+              <mxPoint x="0.0" y="236.11000000000004" />
+              <mxPoint x="25.533" y="270.37000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" value="1 : 0..N&lt;br&gt;tournament_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="tournament" target="participation" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225.93" y="591.75" />
+              <mxPoint x="256.94" y="651.39" />
+              <mxPoint x="256.94" y="651.39" />
+              <mxPoint x="256.94" y="651.39" />
+              <mxPoint x="267.09000000000003" y="661.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" value="1 : 0..1&lt;br&gt;payment_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="payment" target="bonus_accrual" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="977.49" y="586.54" />
+              <mxPoint x="1015.1999999999999" y="649.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" value="1 : 0..N&lt;br&gt;rule_id" style="html=1;endArrow=block;endFill=1;fontSize=14;labelBackgroundColor=#ffffff;strokeColor=#526579;" edge="1" source="loyalty_rule" target="bonus_accrual" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1153.2" y="542.24" />
+              <mxPoint x="1134.1" y="631.4499999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

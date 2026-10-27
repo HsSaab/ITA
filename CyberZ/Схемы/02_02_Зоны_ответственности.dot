@@ -1,0 +1,16 @@
+digraph G {
+graph [charset="UTF-8", rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.5", ranksep="0.65", splines=polyline];
+node [shape=plain, fontname="DejaVu Sans", fontsize=15];
+edge [fontname="DejaVu Sans", fontsize=12, color="#526579", arrowsize=0.7];
+m [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Управляющий</B></TD></TR><TR><TD ALIGN="LEFT">Контроль всех процессов и правил обслуживания</TD></TR></TABLE>>];
+a [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Администратор</B></TD></TR><TR><TD ALIGN="LEFT">БП1 · Бронирование</TD></TR><TR><TD ALIGN="LEFT">БП2 · Регистрация и пополнение</TD></TR><TR><TD ALIGN="LEFT">БП5 · Приём технической проблемы</TD></TR><TR><TD ALIGN="LEFT">БП6 · Подготовка места</TD></TR><TR><TD ALIGN="LEFT">БП7 · Обновление игр</TD></TR><TR><TD ALIGN="LEFT">БП10 · Контроль бонусов</TD></TR></TABLE>>];
+t [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Техническая поддержка</B></TD></TR><TR><TD ALIGN="LEFT">БП5 · Диагностика и устранение сбоя</TD></TR><TR><TD ALIGN="LEFT">БП8 · Проведение турнира</TD></TR></TABLE>>];
+l [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>LanGame<BR/>автоматизация</B></TD></TR><TR><TD ALIGN="LEFT">БП1–2 · Учёт брони и оплаты</TD></TR><TR><TD ALIGN="LEFT">БП3 · Запуск сессии</TD></TR><TR><TD ALIGN="LEFT">БП4 · Продление и завершение</TD></TR><TR><TD ALIGN="LEFT">БП6–7 · Режим работы ПК</TD></TR><TR><TD ALIGN="LEFT">БП8 · Учёт турнирного пакета</TD></TR><TR><TD ALIGN="LEFT">БП9 · Вход в арендованный аккаунт</TD></TR><TR><TD ALIGN="LEFT">БП10 · Расчёт и начисление бонусов</TD></TR></TABLE>>];
+g [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Гость<BR/>самостоятельные действия</B></TD></TR><TR><TD ALIGN="LEFT">БП1–2, 5 · Заявка, данные, оплата, обращение</TD></TR><TR><TD ALIGN="LEFT">БП3–4 · Выбор тарифа и действия</TD></TR><TR><TD ALIGN="LEFT">БП8 · Покупка пакета и подключение</TD></TR><TR><TD ALIGN="LEFT">БП9 · Выбор игры для аренды</TD></TR></TABLE>>];
+m -> a [label="работа персонала", style=solid];
+m -> t [label="техническое обеспечение", style=solid];
+m -> l [label="правила автоматизации", style=dashed];
+g -> l [label="запросы гостя", style=dashed];
+{rank=same; a; t;}
+{rank=same; g; l;}
+}

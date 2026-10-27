@@ -1,0 +1,23 @@
+digraph G {
+graph [charset="UTF-8", rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.5", ranksep="0.65", splines=polyline];
+node [shape=plain, fontname="DejaVu Sans", fontsize=15];
+edge [fontname="DejaVu Sans", fontsize=12, color="#526579", arrowsize=0.7];
+guest [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Гость<BR/>guest</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+wallet [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Баланс гостя<BR/>wallet</B></TD></TR><TR><TD ALIGN="LEFT">guest_id [PK, FK]</TD></TR></TABLE>>];
+payment [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Платёж<BR/>payment</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">guest_id [FK]</TD></TR><TR><TD ALIGN="LEFT">accepted_by [FK]</TD></TR></TABLE>>];
+booking [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Бронирование<BR/>booking</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">guest_id [FK]</TD></TR><TR><TD ALIGN="LEFT">pc_id [FK]</TD></TR><TR><TD ALIGN="LEFT">created_by [FK]</TD></TR></TABLE>>];
+session [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Игровая сессия<BR/>session</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">guest_id [FK]</TD></TR><TR><TD ALIGN="LEFT">pc_id [FK]</TD></TR><TR><TD ALIGN="LEFT">tariff_id [FK]</TD></TR><TR><TD ALIGN="LEFT">booking_id [FK]</TD></TR></TABLE>>];
+pc [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Игровой ПК<BR/>pc</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+tariff [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Тариф<BR/>tariff</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR></TABLE>>];
+session_event [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#526579"><TR><TD BGCOLOR="#E7EFF7"><B>Событие сессии<BR/>session_event</B></TD></TR><TR><TD ALIGN="LEFT">id [PK]</TD></TR><TR><TD ALIGN="LEFT">session_id [FK]</TD></TR><TR><TD ALIGN="LEFT">tariff_id [FK]</TD></TR></TABLE>>];
+guest -> wallet [label="1 : 0..1\nguest_id", style=solid];
+guest -> booking [label="1 : 0..N\nguest_id", style=solid];
+pc -> booking [label="1 : 0..N\npc_id", style=solid];
+guest -> payment [label="1 : 0..N\nguest_id", style=solid];
+guest -> session [label="1 : 0..N\nguest_id", style=solid];
+pc -> session [label="1 : 0..N\npc_id", style=solid];
+tariff -> session [label="1 : 0..N\ntariff_id", style=solid];
+booking -> session [label="0..1 : 0..1\nbooking_id", style=solid];
+session -> session_event [label="1 : 0..N\nsession_id", style=solid];
+tariff -> session_event [label="0..1 : 0..N\ntariff_id", style=solid];
+}
